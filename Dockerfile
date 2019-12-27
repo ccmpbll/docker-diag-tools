@@ -6,4 +6,4 @@ RUN apk --no-cache --no-progress update && apk --no-cache --no-progress upgrade 
     && apk --no-cache --no-progress add bash curl speedtest-cli iputils tcptraceroute bind-tools \
     && rm -rf /tmp/* /var/tmp/*
 
-ENTRYPOINT ["/bin/bash", "sleep 999d"]
+ENTRYPOINT ["sleep 999d"]
