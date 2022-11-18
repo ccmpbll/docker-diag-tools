@@ -24,4 +24,4 @@ jobs:
       run: docker build . --file Dockerfile --tag docker-diag-tools:latest
       
     - name: Docker Push
-      run: docker push ${{secrets.DOCKER_USER}}/docker-diag-tools:latest
+      run: docker push ${{secrets.DOCKER_USER}}/docker-diag-tools
