@@ -4,7 +4,7 @@ LABEL maintainer="Chris Campbell"
 
 RUN apt-get update && apt-get dist-upgrade -y
 
-RUN apt-get install -y bash curl iperf3 iproute2 speedtest-cli procps python3 python3-pip \
+RUN apt-get install -y apt-utils bash curl iperf3 iproute2 speedtest-cli procps python3 python3-pip \
     net-tools vnstat mtr tcptraceroute openssh-client openssl tcpdump dnsutils wget
     
 RUN apt-get clean -y && apt-get autoremove -y
