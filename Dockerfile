@@ -1,11 +1,13 @@
-FROM alpine:latest
-LABEL Name=docker-diag Version=0.1
+FROM debian:latest
+LABEL Name=docker-diag-tools Version=0.2
 LABEL maintainer="Chris Campbell"
 
-RUN apk --no-cache --no-progress update && apk --no-cache --no-progress upgrade \
-    && apk --no-cache --no-progress add bash curl iperf3 iproute2 speedtest-cli procps python3 py3-pip \
-    iputils vnstat mtr tcptraceroute openssh-client openssl tcpdump bind-tools wget busybox-extras \
-    && rm -rf /tmp/* /var/tmp/*
+RUN apt-get update && apt-get dist-upgrade -y
+
+RUN apt-get install -y bash curl iperf3 iproute2 speedtest-cli procps python3 python3-pip \
+    net-tools vnstat mtr tcptraceroute openssh-client openssl tcpdump dnsutils wget
+    
+RUN apt-get clean -y && apt-get autoremove -y
     
 RUN pip install cloudflarepycli
 
