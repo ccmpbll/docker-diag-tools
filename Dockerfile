@@ -9,6 +9,6 @@ net-tools vnstat mtr tcptraceroute openssh-client openssl tcpdump dnsutils wget
     
 RUN apt-get clean -y && apt-get autoremove -y
     
-RUN pip install cloudflarepycli
+RUN pip install cloudflarepycli bs4
 
 ENTRYPOINT ["/bin/sleep", "999d"]
