@@ -1,5 +1,5 @@
 # docker-diag-tools
-![Image Build Status](https://img.shields.io/github/workflow/status/ccmpbll/docker-diag-tools/Docker%20Image%20CI?style=flat-square) ![Docker Image Size](https://img.shields.io/docker/image-size/ccmpbll/docker-diag-tools/latest?style=flat-square) ![Docker Pulls](https://img.shields.io/docker/pulls/ccmpbll/docker-diag-tools.svg?style=flat-square) ![License](https://img.shields.io/badge/License-GPLv3-blue.svg?style=flat-square)
+![Image Build Status](https://img.shields.io/github/actions/workflow/status/ccmpbll/docker-diag-tools/docker-image.yml?branch=master) ![Docker Image Size](https://img.shields.io/docker/image-size/ccmpbll/docker-diag-tools/latest) ![Docker Pulls](https://img.shields.io/docker/pulls/ccmpbll/docker-diag-tools.svg) ![License](https://img.shields.io/badge/License-GPLv3-blue.svg)
 
 A very simple Debian-based container packed with useful network troubleshooting tools.
 
