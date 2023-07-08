@@ -5,10 +5,10 @@ LABEL maintainer="Chris Campbell"
 RUN apt-get update && apt-get dist-upgrade -y
 
 RUN apt-get install -y apt-utils bash curl iputils-ping iperf3 iproute2 speedtest-cli procps python3 python3-pip \
-net-tools vnstat mtr traceroute tcptraceroute openssh-client openssl tcpdump dnsutils wget gnupg mosquitto-clients
+net-tools netcat vnstat mtr traceroute tcptraceroute openssh-client openssl tcpdump dnsutils wget gnupg mosquitto-clients
     
 RUN apt-get clean -y && apt-get autoremove -y
     
-RUN pip install cloudflarepycli bs4
+RUN pip install cloudflarepycli
 
 ENTRYPOINT ["/bin/sleep", "999d"]
