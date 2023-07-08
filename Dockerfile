@@ -9,6 +9,6 @@ net-tools netcat-openbsd vnstat mtr traceroute tcptraceroute openssh-client open
     
 RUN apt-get clean -y && apt-get autoremove -y
     
-RUN pip install cloudflarepycli
+RUN pip install cloudflarepycli --break-system-packages
 
 ENTRYPOINT ["/bin/sleep", "999d"]
