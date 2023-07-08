@@ -8,7 +8,5 @@ RUN apt-get install -y apt-utils bash curl iputils-ping iperf3 iproute2 speedtes
 net-tools netcat-openbsd vnstat mtr traceroute tcptraceroute openssh-client openssl tcpdump dnsutils wget gnupg mosquitto-clients
     
 RUN apt-get clean -y && apt-get autoremove -y
-    
-RUN pip install cloudflarepycli --break-system-packages
 
 ENTRYPOINT ["/bin/sleep", "999d"]
