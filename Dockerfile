@@ -1,5 +1,5 @@
-FROM debian:latest
-LABEL Name=docker-diag-tools Version=0.3
+FROM debian:bookworm-slim
+LABEL Name=docker-diag-tools
 LABEL maintainer="Chris Campbell"
 
 RUN apt update && apt full-upgrade -y
